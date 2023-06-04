@@ -8,6 +8,7 @@ import FeaturedCard from '@/contents/index/FeaturedCard';
 import Header from '@/contents/index/Header';
 import PrettyOptimized from '@/contents/index/PrettyOptimized';
 import Quote from '@/contents/index/Quote';
+import Contact from '@/components/Contact';
 
 function FeaturedCardSection() {
   return (
@@ -125,7 +126,7 @@ function IndexContents() {
         <QuoteSection />
       </div>
       <section className={clsx('mb-12', 'lg:mb-24')}>
-        <CleanIntuitive />
+        <Contact />
       </section>
       <section className={clsx('mb-12', 'lg:mb-24')}>
         <DetailOriented />

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@emailjs/browser':
+        specifier: ^3.11.0
+        version: 3.11.0
       remark-plugins:
         specifier: workspace:^0.1.0
         version: link:packages/remark-plugins
@@ -303,6 +306,11 @@ packages:
   /@corex/deepmerge@4.0.37:
     resolution: {integrity: sha512-PX90bEnrLdxd5e6rSFWsghExMuSw0Uov3fWJuuaoFuUQIS/446diu/4seExK5b+43L+SOBbd2uBGwYUkG1JfCw==}
     dev: true
+
+  /@emailjs/browser@3.11.0:
+    resolution: {integrity: sha512-RkY3FKZ3fPdK++OeF46mRTFpmmQWCHUVHZH209P3NE4D5sg2Atg7S2wa3gw5062Gl4clt4Wn5SyC4WhlVZC5pA==}
+    engines: {node: '>=14.0.0'}
+    dev: false
 
   /@emotion/is-prop-valid@0.8.8:
     resolution: {integrity: sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA==}
