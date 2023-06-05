@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://www.enji.dev',
+  siteUrl: 'https://kinfish-owns-computer.vercel.app',
   priority: 0.6,
   generateRobotsTxt: true,
   generateIndexSitemap: false,

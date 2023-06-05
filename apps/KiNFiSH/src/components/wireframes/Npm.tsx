@@ -108,6 +108,8 @@ function NpmWireframe({
             'dark:border-divider-dark'
           )}
         />
+
+        {/* skeleton value is gonna be added here */}
         <div className={clsx('mt-4 flex flex-col gap-2')}>
           <SkeletonSm w={400} />
           <SkeletonSm w={200} />

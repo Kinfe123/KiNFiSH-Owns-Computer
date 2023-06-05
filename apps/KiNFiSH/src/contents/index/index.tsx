@@ -9,6 +9,8 @@ import Header from '@/contents/index/Header';
 import PrettyOptimized from '@/contents/index/PrettyOptimized';
 import Quote from '@/contents/index/Quote';
 import Contact from '@/components/Contact';
+import Mashkabet from '@/components/Mashkabet';
+import Explore from '@/components/Explore';
 
 function FeaturedCardSection() {
   return (
@@ -133,6 +135,12 @@ function IndexContents() {
       </section>
       <section className={clsx('mb-12', 'lg:mb-24')}>
         <PrettyOptimized />
+      </section>
+      <section className={clsx('mb-12', 'lg:mb-24')}>
+        <Mashkabet />
+      </section>
+      <section className={clsx('mb-12', 'lg:mb-24')}>
+        <Explore />
       </section>
     </>
   );

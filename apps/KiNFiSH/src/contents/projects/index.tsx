@@ -15,12 +15,12 @@ function ProjectsContents() {
   return (
     <>
       <SectionTitle
-        title="The dynamic accent colors."
-        caption="tailwindcss-accent"
-        description="Add accent colors for dynamic, flexible color use in your Tailwind CSS project."
+        title="Ease your Fullstack Application."
+        caption="RVTCS"
+        description="Build scalable and secure full-stack applications faster than ever before with RVTCS- create a structured architecture, integrate with ease using APIs, and leverage pre-built tools for common functionalities, all while Vite optimizes your development and build process. "
         button={{
           title: 'learn more',
-          href: '/docs/tailwindcss-accent',
+          href: '/docs/rvtcs',
         }}
       />
       <SectionContent>
@@ -51,28 +51,30 @@ function ProjectsContents() {
                   browserTabs={[
                     {
                       icon: <GitHubIcon className="h-4 w-4" />,
-                      title: 'enjidev/tailwindcss-accent - GitHub',
+                      title: 'Kinfe123/rvtcs-kit - GitHub',
                       isActive: currentState === 'github',
                     },
                     {
                       icon: <NpmIcon className="h-4 w-4" />,
-                      title: 'tailwindcss-accent - npm',
+                      title: 'npx create-rvtcs@latest',
                       isActive: currentState === 'npm',
                     },
                   ]}
                 >
                   {currentState === 'github' && (
                     <GitHubWireframe
-                      author="enjidev"
+                      author="Kinfe123"
                       license="MIT"
-                      repository="tailwindcss-accent"
-                      description="Adds accent colors for more dynamic and flexible color utilization."
+                      repository="rvtcs-kit"
+                      description="A Modern and Elegant way
+                      of creating Fullstack Application"
                     />
                   )}
                   {currentState === 'npm' && (
                     <NpmWireframe
-                      packageName="tailwindcss-accent"
-                      description="Adds accent colors for more dynamic and flexible color utilization."
+                      packageName="create-rvtcs"
+                      description="A Modern and Elegant way
+                      of creating Fullstack Application"
                       isWithTypeScript
                     />
                   )}

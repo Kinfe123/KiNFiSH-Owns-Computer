@@ -14,11 +14,11 @@ const nextConfig = {
       destination: '/work/skills-and-tools',
       permanent: false,
     },
-    {
-      source: '/docs',
-      destination: '/docs/tailwindcss-accent',
-      permanent: false,
-    },
+    // {
+    //   source: '/docs',
+    //   destination: '/docs/rvtcs',
+    //   permanent: false,
+    // },
   ],
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   reactStrictMode: true,

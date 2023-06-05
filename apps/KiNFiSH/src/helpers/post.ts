@@ -46,7 +46,7 @@ export const formatDateISO = (date: string) => {
 export const formatLang = (lang: TPostFrontMatter['lang']) => {
   switch (lang) {
     case 'id':
-      return 'Bahasa Indonesia';
+      return 'Ethiopia';
     case 'en':
       return 'English';
     default:
@@ -94,8 +94,8 @@ export const getPostStructuredData = ({
     author: [
       {
         '@type': 'Person',
-        name: 'Enji Kusnadi',
-        jobTitle: 'Front-End Developer',
+        name: 'KinfeMicheal Tariku',
+        jobTitle: 'Software Developer',
         url: 'https://www.enji.dev/about',
       },
     ],

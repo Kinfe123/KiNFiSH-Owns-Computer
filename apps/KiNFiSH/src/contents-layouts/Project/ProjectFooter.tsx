@@ -21,7 +21,7 @@ function ProjectFooter({ githubUrl = '' }: ProjectFooterProps) {
         <div className={clsx('')}>
           Got any feedback?{' '}
           <a
-            href={githubUrl}
+            href='https://github.com/Kinfe123'
             target="_blank"
             rel="noreferrer nofollow"
             className={clsx('link')}

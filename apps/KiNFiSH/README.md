@@ -1,3 +1,3 @@
 <div align="center">
-  <h1>enji.dev</h1>
+  <h1>KINFISH</h1>
 </div>
