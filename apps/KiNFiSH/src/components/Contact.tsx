@@ -18,7 +18,7 @@ const Contact = () => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
       setLoading(true);
       setClicked(true);
-      console.log('The env varibales are:  '  , process.env)
+ 
       // if (form && form.current) {
       //    setForms(form.current)
       //     // setForms(form.current || undefined);
