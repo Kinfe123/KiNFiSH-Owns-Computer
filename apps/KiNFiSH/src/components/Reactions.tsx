@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import { m, useAnimationControls } from 'framer-motion';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import type { PropsWithChildren } from 'react';
 
 // import EmojiReaction from '@/components/EmojiReaction';
 // import InsightButton from '@/components/InsightButton';
@@ -13,11 +14,10 @@ import { useEffect } from 'react';
 
 // import { MAX_REACTIONS_PER_SESSION } from '@/constants/app';
 
-// import type { PropsWithChildren } from 'react';
 
-// interface CounterProps {
-//   count: number;
-// }
+interface CounterProps {
+  count: number;
+}
 
 // function Counter({ count }: CounterProps) {
 //   const controls = useAnimationControls();
@@ -63,7 +63,7 @@ import { useEffect } from 'react';
 //   );
 // }
 
-// type ReactionCounterProps = PropsWithChildren<CounterProps>;
+
 
 // function ReactionCounter({ count, children = null }: ReactionCounterProps) {
 //   return (
@@ -86,6 +86,7 @@ import { useEffect } from 'react';
 // };
 
 const Reactions = () => { 
+  type ReactionCounterProps = PropsWithChildren<CounterProps>;
   
   // currently, there is no way to get the 'slug' via a component property.
   // const { pathname } = useRouter();

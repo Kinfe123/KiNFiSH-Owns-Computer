@@ -3,9 +3,9 @@ import clsx from 'clsx';
 import WithTableOfContentsMock from '@/components/layouts/WithTableOfContentsMock';
 import Reactions from '@/components/Reactions';
 
-import type { ReactionsProps } from '@/components/Reactions';
+// import type { ReactionsProps } from '@/components/Reactions';
 
-function WithReactions(props: ReactionsProps) {
+function WithReactions(props: any) {
   return (
     <div
       className={clsx(
