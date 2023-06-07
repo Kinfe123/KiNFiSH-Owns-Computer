@@ -12,7 +12,9 @@ import TIL from '@/components/mdx/TIL';
       <TIL.ItemTag>Tailwindcss</TIL.ItemTag>
       <TIL.ItemTag>Typescript</TIL.ItemTag>
     </TIL.ItemTags>
-
+    ```bash
+    npm install mdx turbo
+    ```
     I have learned how to build a documentation site with the help of using some couple of libraries - MDX, turbo and some other prerequisites dev stuffs
 
    
@@ -35,6 +37,9 @@ import TIL from '@/components/mdx/TIL';
       <TIL.ItemTag>Tailwindcss</TIL.ItemTag>
       <TIL.ItemTag>tRPC</TIL.ItemTag>
     </TIL.ItemTags>
+    ```bash
+    npm create t3-app@latest my-t30-very-latest-modern-v1.0.0.1
+    ```
 
     I have been using Nextjs for most of my fullstack dev experience now , I started learning tRPC to excel a native backend experience and other serverless serveice as BaaS
 
@@ -49,74 +54,57 @@ import TIL from '@/components/mdx/TIL';
   <TIL.Item>
 
     ## Learned More About Nextjs13 - The time of release 
-
+     
     <TIL.ItemTags>
       <TIL.ItemTag>Nextjs13</TIL.ItemTag>
       <TIL.ItemTag>pre</TIL.ItemTag>
       <TIL.ItemTag>flex</TIL.ItemTag>
     </TIL.ItemTags>
-
-   By the time i was facinated by the level of abstraction & so many feature that was added on Nextjs 13 experimental app release which pushed to learn more about how to build an entire application just using Nextjs13
-
+    ```bash
+    npx create-next-app my-app-final-v1.0.0.1
+    ```
+     By the time i was facinated by the level of abstraction & so many feature that was added on Nextjs 13 experimental app release which pushed to learn more about how to build an entire application just using Nextjs13
+      
     [Nextjs13x](https://nextjs.org)
 
   </TIL.Item>
 
   <TIL.Item>
 
-    ## import mdx file sebagai component
+    ## Also learning about where could i host all the app - Vercel 
 
     <TIL.ItemTags>
-      <TIL.ItemTag>react</TIL.ItemTag>
-      <TIL.ItemTag>mdx</TIL.ItemTag>
+      <TIL.ItemTag>vercel</TIL.ItemTag>
+      <TIL.ItemTag>app</TIL.ItemTag>
     </TIL.ItemTags>
 
-    Import mdx file di component, caranya mirip seperti import component biasa:
+    I have also learned where should i have to deploy and manage my deployment and learned a lot of topic that could elevate the effeciency of my app in most cases 
+     - Edge Function 
+     - Serverless Function
+     - KV - in memory cache 
+     - CI/CD
 
-    ```ts {copy:false} {footer:false}
-    import Contents from '@/mdx/Contents.mdx';
-
-    // Penggunaan
-    <Contents />
-    ```
-
-    Ternyata ada di [dokumentasinya](https://mdxjs.com/docs/using-mdx/#mdx-content). Biasakan membaca dulu ya gais jangan kaya saya wkwk.
+   Explore [docs](https://vercel.com)
 
   </TIL.Item>
 
   <TIL.Item>
 
-    ## :not() pseudo-class
+    ## What about backend application ?
 
     <TIL.ItemTags>
-      <TIL.ItemTag>css</TIL.ItemTag>
-      <TIL.ItemTag>selector</TIL.ItemTag>
+      <TIL.ItemTag>NOdejs</TIL.ItemTag>
+      <TIL.ItemTag>Python</TIL.ItemTag>
     </TIL.ItemTags>
+    ```bash
+    npm install express dotenv mongoose cors axios 
+    ```
+    and 
+    ```bash
+    pip install fastapi
+    ```
 
-    Pake `:not()` ini emang agak tricky, salah penggunaan hasilnya juga bisa ngga sesuai harapan.
-
-    Contoh, styling inline `code` dimana bukan children dari `pre` ataupun `.code-block`. Penggunaannya:
-
-    <TIL.DnD>
-      <TIL.Dont>
-        ```css {copy:false} {footer:false}
-        :not(pre), :not(.code-block) {
-          > code {
-            background-color: 'red';
-          }
-        }
-        ```
-      </TIL.Dont>
-      <TIL.Do>
-        ```css {copy:false} {footer:false}
-        :not(pre, .code-block) {
-          > code {
-            background-color: 'red';
-          }
-        }
-        ```
-      </TIL.Do>
-    </TIL.DnD>
+   I have learned how could i build and deploy my backend using **Python** and **Nodejs**  along way with a db management with in memory db like redis .
 
   </TIL.Item>
 
@@ -126,22 +114,25 @@ import TIL from '@/components/mdx/TIL';
 
   <TIL.Item>
 
-    ## Turborepo dependsOn
+    ## 🤔  Topological Sort asks for Database here ?
 
     <TIL.ItemTags>
-      <TIL.ItemTag>turborepo</TIL.ItemTag>
-      <TIL.ItemTag>monorepo</TIL.ItemTag>
+      <TIL.ItemTag>SQL</TIL.ItemTag>
+      <TIL.ItemTag>MONGODB </TIL.ItemTag>
     </TIL.ItemTags>
-
-    ```json {copy:false} {footer:false}
-    "build": {
-      "dependsOn": ["^lint", "test"]
-    },
+    ```sql
+    SELECT * FROM USER id=1234
     ```
-
-    `dependsOn` dengan ^ menandakan task dari package lain, sedangkan yang tanpa ^ task dari package itu sendiri.
-
-    Misal: app A pas mau build harus running tasks `lint` di semua package dependenciesnya, dan juga harus running task `test` app A itu sendiri.
+    and 
+     ```ts
+     const user = await prisma.user.findMany(
+      where {
+        id = 1234;
+      }
+     )
+    ```
+     I have also be pushed to learned a db before moving to building my backedn applciation , which could give a soul for my application. i have learned **SQL** , **MongoDB** and someother **ORM** and **ODM** which can enhance my 
+     experience on working with non relation or relational dbs.
 
   </TIL.Item>
 
@@ -151,14 +142,16 @@ import TIL from '@/components/mdx/TIL';
 
   <TIL.Item>
     
-    ## e.target.valueAsNumber
+    ## Again Topological sort ? learning what the user
 
     <TIL.ItemTags>
       <TIL.ItemTag>html</TIL.ItemTag>
       <TIL.ItemTag>js</TIL.ItemTag>
     </TIL.ItemTags>
-
-    Pakai `e.target.valueAsNumber` untuk otomatis mengembalikan nilai input sebagai number. Tidak perlu `parseInt(e.target.value)` lagi.
+     ```bash
+     npx create-react-app my-very-very-first-app-v1.0.0.1 
+     ```
+    this is where web dev journey embrase and started officially, I have learned building user interface using **HTML** as well as **css** and I have backed my skill by learnign **JS** - along way with **reactjs** - a forntend lib for building user interfaces
 
   </TIL.Item>
 
