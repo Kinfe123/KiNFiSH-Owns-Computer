@@ -18,7 +18,7 @@ function Head({
   structuredData = '',
 }: HeadProps) {
   const currentUrl = useCurrentUrl();
-
+ // bassed on the content of the page , this page header will be updated
   const htmlTitle = overrideTitle
     ? title
     : `${title} — Kinfe 💻  Software Developer`;
