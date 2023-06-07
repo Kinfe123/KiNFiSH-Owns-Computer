@@ -20,7 +20,10 @@ function Blog({ posts }: BlogProps) {
       }}
       headerImage={<HeaderImage />}
     >
-      <BlogContents posts={posts} />
+      <h1 className='text-2xl self-center flex justify-center items-center font-bold '>Blog will be stated soon 😁</h1>
+
+       {/*A place where i should be using the list of blogs */}
+      {/* <BlogContents posts={posts} /> */}
     </Page>
   );
 }
