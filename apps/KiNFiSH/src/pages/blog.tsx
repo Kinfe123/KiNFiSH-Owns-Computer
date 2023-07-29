@@ -16,7 +16,7 @@ function Blog({ posts }: BlogProps) {
     <Page
       frontMatter={{
         title: 'Home Made Thoughts and Insights',
-        description: 'Some personal thoughts :) ',
+        description: 'Something to talk about :) ',
       }}
       headerImage={<HeaderImage />}
     >
@@ -34,6 +34,7 @@ export const getStaticProps: GetStaticProps<BlogProps> = async () => {
   return {
     props: {
       posts: allPostsData,
+    
     },
   };
 };

@@ -121,13 +121,13 @@ import TIL from '@/components/mdx/TIL';
       <TIL.ItemTag>MONGODB </TIL.ItemTag>
     </TIL.ItemTags>
     ```sql
-    SELECT * FROM USER id=1234
+    SELECT * FROM USER id WHERE ID = 1
     ```
     and 
      ```ts
      const user = await prisma.user.findMany(
       where {
-        id = 1234;
+        id = 1;
       }
      )
     ```

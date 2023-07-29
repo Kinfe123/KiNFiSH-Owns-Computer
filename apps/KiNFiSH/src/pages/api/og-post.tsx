@@ -55,7 +55,7 @@ const OgImage = async (request: NextRequest) => {
 
     const font400 = await PlusJakartaSans400;
     const font800 = await PlusJakartaSans800;
-
+    
     return new ImageResponse(
       (
         <PostOgImage
