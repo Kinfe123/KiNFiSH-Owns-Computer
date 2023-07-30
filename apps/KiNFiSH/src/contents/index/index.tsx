@@ -15,7 +15,11 @@ import Explore from '@/components/Explore';
 function FeaturedCardSection() {
   return (
     <div className={clsx('content-wrapper')}>
+        <h1 className="bg-gradient-to-br font-bold space md:text-3xl md:text-bold  xl:text-4xl xl:text-bold text-4xl from-blue-400 to-gray-200 bg-clip-text uppercase text-transparent dark:from-gray-200 dark:to-purple-400 my-3">
+          # WITH ME.
+        </h1>
       <div className={clsx('flex flex-col gap-4', 'lg:flex-row lg:gap-8')}>
+
         <FeaturedCard
           icon={
             <div

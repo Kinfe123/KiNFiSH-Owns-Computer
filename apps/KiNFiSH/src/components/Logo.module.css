@@ -1,0 +1,17 @@
+.magicText {
+  --purple: rgb(153, 111, 5);
+  --violet: rgb(110, 8, 157);
+  --pink: rgb(244, 143, 177);
+  animation: background-pan 2s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--violet),
+    var(--pink),
+    var(--purple)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
