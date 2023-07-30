@@ -38,9 +38,11 @@ function ButtonResume() {
   return (
     <a
       target="_blank"
+    
       rel="noreferrer nofollow"
-      href="https://bit.ly/KINFISHTECH"
-      onClick={handleClick}
+      href="assets\resume\KINFEMICHAEL_TARIKU.pdf"
+
+      download
       className={clsx('button button--ghost px-2', 'md:button--big md:px-2')}
     >
       <DocumentIcon className={clsx('h-5 w-5')} />
@@ -108,41 +110,46 @@ function HeaderCta({
   }
 
   return (
-    <m.div className={clsx('flex gap-2')} initial="hide" animate="show">
-      <m.div
-        className={clsx('relative z-20')}
-        variants={animation}
-        transition={{ delay: 0.4 }}
-      >
-        <ButtonContactMe />
-      </m.div>
-      {isFree ? (
+
+    <div className="flex flex-row justify-center items-center ">
+
+
+      <m.div className={clsx('flex gap-2')} initial="hide" animate="show">
         <m.div
+          className={clsx('relative z-20')}
           variants={animation}
-          transition={{ delay: 2.8 }}
-          className={clsx('relative z-10')}
+          transition={{ delay: 0.4 }}
         >
+          <ButtonContactMe />
+        </m.div>
+        {isFree ? (
           <m.div
-            variants={isFreeVariants}
-            transition={{ delay: isFreeAnimationDuration + 1.5, duration: 0.4 }}
+            variants={animation}
+            transition={{ delay: 2.8 }}
+            className={clsx('relative z-10')}
           >
-            <AvailableForHire />
+            <m.div
+              variants={isFreeVariants}
+              transition={{ delay: isFreeAnimationDuration + 1.5, duration: 0.4 }}
+            >
+              <AvailableForHire />
+            </m.div>
+            <m.div
+              className={clsx('absolute top-0 left-0')}
+              initial={{ x: -48, opacity: 0, pointerEvents: 'none' }}
+              animate={{ x: 0, opacity: 1, pointerEvents: 'auto' }}
+              transition={{ delay: isFreeAnimationDuration + 1.6, duration: 0.4 }}
+              >
+              <ButtonResume />
+            </m.div>
           </m.div>
-          <m.div
-            className={clsx('absolute top-0 left-0')}
-            initial={{ x: -48, opacity: 0, pointerEvents: 'none' }}
-            animate={{ x: 0, opacity: 1, pointerEvents: 'auto' }}
-            transition={{ delay: isFreeAnimationDuration + 1.6, duration: 0.4 }}
-          >
+        ) : (
+          <m.div variants={animation} transition={{ delay: 0.5 }}>
             <ButtonResume />
           </m.div>
-        </m.div>
-      ) : (
-        <m.div variants={animation} transition={{ delay: 0.5 }}>
-          <ButtonResume />
-        </m.div>
-      )}
-    </m.div>
+        )}
+      </m.div>
+      </div>
   );
 }
 

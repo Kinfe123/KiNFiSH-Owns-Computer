@@ -116,7 +116,7 @@ function FooterDescription() {
         who loves and derives great pleasure
 from the challenge of solving real-world problems
 that are of utmost importance.
-      </p>
+    </p>
       <ul className={clsx('-ml-2 flex gap-1')}>
         <li>
           <a
@@ -215,15 +215,12 @@ function Footer() {
                       href: 'https://www.figma.com/community/file/1176392613303840973',
                       isInternal: false,
                     },
-                    {
-                      title: 'Source Code',
-                      href: 'https://github.com/enjidev/enji.dev',
-                      isInternal: false,
-                    },
-                    {
-                      title: 'Credits',
-                      href: '/credits',
-                    },
+                    // {
+                    //   title: 'Source Code',
+                    //   href: 'https://github.com/enjidev/enji.dev',
+                    //   isInternal: false,
+                    // },
+                   
                   ]}
                 />
               </div>
