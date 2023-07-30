@@ -12,7 +12,7 @@
 
   .background-grid {
     @apply relative z-0 bg-slate-100;
-    @apply dark:bg-[#0c1222];
+    @apply dark:bg-[#0b1721];
 
     &::before {
       @apply bg-grid-slate-200/80 absolute inset-0 z-[-1] content-[''];

@@ -14,7 +14,7 @@ function HeaderTitle() {
   const controls = useAnimationControls();
 
   return (
-    <div>
+    <div className='flex flex-col justify-center items-center '>
       <m.div
         className={clsx(
           'mb-1 flex items-center gap-1 text-2xl text-slate-600',
@@ -40,8 +40,8 @@ function HeaderTitle() {
             bounce: 0.7,
             duration: 0.7,
           }}
-        >
-          <Image
+        > 
+          {/* { <Image
             className={clsx('w-7 md:w-10')}
             alt="Love-you Gesture"
             src="/assets/emojis/love-you-gesture.png"
@@ -55,13 +55,13 @@ function HeaderTitle() {
               });
             }}
             priority
-          />
-        </m.div>
+          /> } */}
+       </m.div>
       </m.div>
       <span className={clsx('text-slate-700', 'dark:text-slate-300')}>
         <m.span
           className={clsx(
-            'mb-4 block text-[2.5rem] font-[1000] leading-none',
+            'mb-4 block text-center text-[2.5rem] font-[1000] leading-none',
             'md:mb-6 md:text-7xl'
           )}
           initial={animation.hide}
@@ -69,7 +69,7 @@ function HeaderTitle() {
           transition={{ delay: 0.2 }}
         >
           I&apos;m{' '}
-          <span className="modern block bg-gradient-to-r from-red-400 to-blue-500 bg-clip-text text-transparent ">
+          <span className="modern text-center block bg-gradient-to-r from-red-400 to-blue-500 bg-clip-text text-transparent ">
             
             <strong>
               KinfeMichael  <br /> 
@@ -92,15 +92,15 @@ function HeaderTitle() {
           <span className={clsx('lowercase')}>A</span>{' '}
           <strong
             className={clsx(
-              'font-bold lowercase text-slate-700',
+              'font-bold text-center lowercase text-slate-700',
               'dark:text-slate-300'
             )}
           >
             Software Dev -  Competitive Programmer
           </strong>{' '}
           who loves and derives great pleasure {' '}
-          <span className={clsx('block')}> from the challenge of solving real-world problems </span>
-          <span className={clsx('block')}>that are of utmost importance. </span>
+          <span className={clsx('text-center block')}> from the challenge of solving real-world problems </span>
+          <span className={clsx('text-center block')}>that are of utmost importance. </span>
        
           
         </m.h1>

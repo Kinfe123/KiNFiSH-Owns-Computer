@@ -10,7 +10,7 @@ function Index() {
       <Head
         title="KINFEMICHAEL TARIKU · Software Developer | Competitive Programmer"
         description="Hello, I am Kinfe, a resident of Earth who derives great pleasure from the challenge of solving real-world problems that are of utmost importance"
-        ogImage={`${getBaseUrl()}/assets/images/og-image.png`}
+        ogImage={`${getBaseUrl()}/assets/images/me-removebg.png`}
         overrideTitle
       />
       <IndexContents />
