@@ -9,7 +9,7 @@ const Anon:FC = () => {
                 description="A place where you can expreess your thoughts and idea across world in the most very native way possible "
                 button={{
                 title: 'learn more',
-                href: '/docs/anon-thoghts',
+                href: '/docs/anon-thoughts',
                 }}
             />
             

@@ -45,7 +45,7 @@ function SectionTitle({
       >
         {title}
       </p>
-      <p className={clsx('max-w-lg text-slate-600', 'dark:text-slate-400')}>
+      <p className={clsx('max-w-screen text-slate-600', 'dark:text-slate-400')}>
         {description}
       </p>
       {button && (
