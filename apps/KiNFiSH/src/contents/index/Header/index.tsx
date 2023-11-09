@@ -4,6 +4,7 @@ import HeaderCta from '@/contents/index/Header/HeaderCta';
 import HeaderImage from '@/contents/index/Header/HeaderImage';
 import HeaderTechStack from '@/contents/index/Header/HeaderTechStack';
 import HeaderTitle from '@/contents/index/Header/HeaderTitle';
+import Background from '@/components/background/Background';
 
 function Header() {
   return (
@@ -14,6 +15,10 @@ function Header() {
         'lg:pb-28 lg:pt-52'
       )}
     >
+      <div className='mx-auto flex justify-center items-center '>
+
+      <Background />
+      </div>
       <div className={clsx('content-wrapper')}>
         <div className={clsx('relative')}>
           <div className={clsx('relative z-10')}>
